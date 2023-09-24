@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class FirstCode extends StatelessWidget{
-  const FirstCode({super.key});
+   FirstCode(this.text,{super.key});
+
+  final String text;
   @override
   Widget build(context){
-    return const Scaffold(
+    return  Scaffold(
       body: Center(
         child: Center(
-            child: Text('Hello World')
+            child: Text(text)
         ),
       ),
     );

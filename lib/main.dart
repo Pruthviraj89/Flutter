@@ -4,8 +4,8 @@ import 'package:practical_a/FirstCode.dart';
 
 void main(){
   runApp(
-    const MaterialApp(
-      home: FirstCode(),
+     MaterialApp(
+      home: FirstCode('Pruthviraj'),
     )
   );
 }

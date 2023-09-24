@@ -5,8 +5,11 @@ class FirstCode extends StatelessWidget{
 
   final String text;
 
-  void rollDice(){
+  var activeDiceImg= 'assests/images/dice-2.png';
 
+  void rollDice(){
+    activeDiceImg='assests/images/dice-4.png';
+    print('ala');
   }
 
   @override
@@ -15,13 +18,19 @@ class FirstCode extends StatelessWidget{
       body: Center(
         child: Center(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+             mainAxisSize: MainAxisSize.min,
               children: [
-                Image.asset('assests/images/dice-2.png',
+                Image.asset(activeDiceImg,
                     width: 100,
                     height: 100
                 ),
-                TextButton(onPressed: rollDice,
+                const SizedBox(height: 20,),
+                TextButton(
+                  onPressed: rollDice,
+                    style: TextButton.styleFrom(
+                        foregroundColor: Colors.orange,
+                      textStyle: const TextStyle(fontSize: 28),
+                        ),
                     child: const  Text('Roll Dice'),
                 )
 

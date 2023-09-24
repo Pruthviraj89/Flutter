@@ -1,4 +1,4 @@
-# practical_a
+# Dice
 
 udemy_course
 
